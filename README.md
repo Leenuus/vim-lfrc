@@ -21,9 +21,9 @@ __Feel free to copy this repo for your use__.
 ## Installation
 
 - Manual Installation
-    0. Prefer `:help vim.filetype.add` for nvim user.
-    1. copy `./syntax/lfrc.vim` to `~/.config/nvim/syntax/` or equivalent.
-    2. copy `./ftdetect/lfrc.vim` to `~/.config/nvim/ftdect` or equivalent.
+    1. Prefer `:help vim.filetype.add` for nvim user.
+    2. copy `./syntax/lfrc.vim` to `~/.config/nvim/syntax/` or equivalent.
+    3. copy `./ftdetect/lfrc.vim` to `~/.config/nvim/ftdect` or equivalent.
 
 - Use your favorite package manager
 
