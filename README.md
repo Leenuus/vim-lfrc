@@ -14,7 +14,7 @@ Work in progress.
 
 Even though I have been using neovim for long time, I didn't try programming related to highlighting and syntax.
 
-Though I tried this time, but I don't have plan to go deep into write vim syntax and highlight files.
+Though I tried this time, but I don't have plan to go deeper into writing vim syntax and highlight files.
 
 __Feel free to copy this repo for your use__.
 
@@ -27,10 +27,17 @@ __Feel free to copy this repo for your use__.
 - Use your favorite package manager
 
 ```lua
+-- for lazy.nvim
 {
-    ""
+    "Leenuus/vim-lfrc"
 }
 ```
+
+## TODO
+
+- Link `lf` options to proper highlight group.
+- Match Builtin commands
+- Match keybindings, and special key names
 
 ## Learning Resources
 
