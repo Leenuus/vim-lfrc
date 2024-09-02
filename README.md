@@ -6,7 +6,7 @@
 
 - I like vim
 - I like lf
-- Why not?
+- __Why not?__
 
 ## Current Stage
 
@@ -21,6 +21,7 @@ __Feel free to copy this repo for your use__.
 ## Installation
 
 - Manual Installation
+    0. Prefer `:help vim.filetype.add` for nvim user.
     1. copy `./syntax/lfrc.vim` to `~/.config/nvim/syntax/` or equivalent.
     2. copy `./ftdetect/lfrc.vim` to `~/.config/nvim/ftdect` or equivalent.
 
@@ -29,7 +30,8 @@ __Feel free to copy this repo for your use__.
 ```lua
 -- for lazy.nvim
 {
-    "Leenuus/vim-lfrc"
+    "Leenuus/vim-lfrc",
+    ft = { "lfrc" },
 }
 ```
 
@@ -38,6 +40,7 @@ __Feel free to copy this repo for your use__.
 - Link `lf` options to proper highlight group.
 - Match Builtin commands
 - Match keybindings, and special key names
+- Match one-liner shell command
 
 ## Learning Resources
 
