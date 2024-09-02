@@ -1,0 +1,65 @@
+set scrolloff 10
+set previewer ~/.config/lf/previewer
+set cleaner ~/.config/lf/cleaner
+set icons true
+set drawbox true
+set ratios 1:1
+set mouse true
+set wrapscroll true
+set info size:time
+set period 5
+
+# disable mapping
+map <esc> echo
+map <c-r> echo
+map <backspace2> echo
+
+# NOTE: commands
+cmd open &$OPENER "$f"
+
+cmd dollarshell ${{
+	mapfile -t files <<<"$fx"
+	for f in "${files[@]}"; do
+		if aunpack "$f"; then
+			lf -remote "send $id echomsg Extraction Done"
+		else
+			lf -remote "send $id echoerr Extraction Fail"
+		fi
+	done
+}}
+
+
+cmd percentshell %{{
+	mapfile -t files <<<"$fx"
+	for f in "${files[@]}"; do
+		if aunpack "$f"; then
+			lf -remote "send $id echomsg Extraction Done"
+		else
+			lf -remote "send $id echoerr Extraction Fail"
+		fi
+	done
+}}
+
+
+cmd ampersandshell &{{
+	mapfile -t files <<<"$fx"
+	for f in "${files[@]}"; do
+		if aunpack "$f"; then
+			lf -remote "send $id echomsg Extraction Done"
+		else
+			lf -remote "send $id echoerr Extraction Fail"
+		fi
+	done
+}}
+
+
+cmd bangshell !{{
+	mapfile -t files <<<"$fx"
+	for f in "${files[@]}"; do
+		if aunpack "$f"; then
+			lf -remote "send $id echomsg Extraction Done"
+		else
+			lf -remote "send $id echoerr Extraction Fail"
+		fi
+	done
+}}

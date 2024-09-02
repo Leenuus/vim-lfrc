@@ -1,4 +1,4 @@
-# lfrc vim syntax file
+# vim-lfrc
 
 - [lf, a great file manager](https://github.com/gokcehan/lf)
 
@@ -20,6 +20,17 @@ __Feel free to copy this repo for your use__.
 
 ## Installation
 
+- Manual Installation
+    1. copy `./syntax/lfrc.vim` to `~/.config/nvim/syntax/` or equivalent.
+    2. copy `./ftdetect/lfrc.vim` to `~/.config/nvim/ftdect` or equivalent.
+
+- Use your favorite package manager
+
+```lua
+{
+    ""
+}
+```
 
 ## Learning Resources
 
