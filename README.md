@@ -37,10 +37,12 @@ __Feel free to copy this repo for your use__.
 
 ## TODO
 
-- Link `lf` options to proper highlight group.
-- Match Builtin commands
-- Match keybindings, and special key names
-- Match one-liner shell command
+- [X] Link `lf` options to proper highlight group.
+- [X] Match Builtin commands
+- [ ] Match keybindings, and special key names
+- [ ] Match one-liner shell command
+- [ ] Match push command
+- [ ] Match `:` command
 
 ## Learning Resources
 
