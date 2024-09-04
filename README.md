@@ -2,6 +2,12 @@
 
 - [lf, a great file manager](https://github.com/gokcehan/lf)
 
+## Screenshot
+
+Colorscheme is `ayu-mirage`.
+
+![demo](./lfrc-highlight-demo.png)
+
 ## Why
 
 - I like vim
